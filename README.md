@@ -10,7 +10,7 @@
 * Eclipse IDE
 * Pivotal Tracker - for external kanban See here: https://www.pivotaltracker.com/n/projects/2350675
 * JUnit for testing
-* Code2Flow for visualization for code flow
+* Code2Flow for visualization of code flow
 
 ## How to use
 Import project into your favorite IDE and click the run button. 
