@@ -1,5 +1,7 @@
 package game;
 
+import java.util.Random;
+
 public class Craps {
 	/**
 	 * randomNumber - Function should serve as a repeatable function as a roll of a single die
@@ -35,7 +37,7 @@ public class Craps {
 
 	/**
 	 * playGame - Simulate a game of craps
-	 * firstRoll - Call functionto rool dice and hold that value
+	 * firstRoll - Call function to rool dice and hold that value
 	 *  
 	 */
 	static void playGame() {
@@ -51,15 +53,15 @@ public class Craps {
 		}
 		//If first roll equals 2 user automatically loses
 		else if(firstRoll == 2){
-			System.out.println("Aww shucks snake eyes.. You lose.")
+			System.out.println("Aww shucks snake eyes.. You lose.");
 		}
 		//If first roll equals 2 user automatically loses
 		else if(firstRoll == 3){
-			System.out.println("A 3 is no good here bucco! You lose.")
+			System.out.println("A 3 is no good here bucco! You lose.");
 		}
 		//If first roll equals 2 user automatically loses
 		else if(firstRoll == 12){
-			System.out.println("Double sixes huh? Well you lose.")
+			System.out.println("Double sixes huh? Well you lose.");
 		}
 		//If user does not win or lose on first roll
 		else {
@@ -72,7 +74,7 @@ public class Craps {
 			int newRoll = rollDice();
 			System.out.println("New roll was: " + newRoll);
 			
-			//Local varible to control while loop
+			//Local variable to control while loop
 			boolean hitPoint = false;
 			
 			//If the new roll value equals the point user wins
@@ -87,12 +89,21 @@ public class Craps {
 			}
 			/**
 			 * If player does not win or lose on second roll
-			 * Under Construction
-			 * Needs: A while loop to keep throwing dice as long as hitPoint is false
+			 * keep rolling until roll equals point or 7
 			 */
 			else {
-				while(hitPoint = false) {
+				while(hitPoint == false) {
 					int newestRoll = rollDice();
+					System.out.println("Newest roll was: " + newestRoll);
+
+					if(newestRoll == point){
+						System.out.println("You won!!!!!!");
+						hitPoint = true;
+					}
+					if(newestRoll == 7){
+						System.out.println("You lost bucco!");
+						hitPoint = true;
+					}
 				}
 			}
 

@@ -2,6 +2,8 @@ package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Random;
+
 class Test {
 
 	//Write function to add 2 numbers together
@@ -37,7 +39,7 @@ class Test {
 	}
 	/////////////////////////////////////////////////
 
-	//Write function to simuslate dice roll using random number function and add number function
+	//Write function to simulate dice roll using random number function and add number function
 	private int rollDice() {
 		//Call random number to get roll value of each die
 		int dice1 = randomNumber();
