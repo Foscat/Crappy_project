@@ -3,7 +3,7 @@
 ### A java game of craps. 
 
 ## Code Flow
-![alt text](https://github.com/Foscat/Crappy_project/blob/master/images/Screenshot%20(122).png);
+![alt text](https://github.com/Foscat/Crappy_project/blob/master/images/New%20flow.png);
 
 ## Tech Used
 * Java
@@ -13,3 +13,5 @@
 * Code2Flow for visualization for code flow
 
 ## How to use
+Import project into your favorite IDE and click the run button. 
+Good luck and may the odds be ever in your favor.
