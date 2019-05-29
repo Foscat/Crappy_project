@@ -93,19 +93,29 @@ public class Craps {
 			 */
 			else {
 				while(hitPoint == false) {
+
+					//Call roll dice function each iteration
 					int newestRoll = rollDice();
+
+					//Logs value of each roll in loop
 					System.out.println("Newest roll was: " + newestRoll);
 
+					//If this iterations roll value equal the point break while loop by changing boolean
+					// and tell user that they won
 					if(newestRoll == point){
 						System.out.println("You won!!!!!!");
 						hitPoint = true;
 					}
+					//If this iterations roll value equal to 7 break while loop with boolean
+					// and tell user that they won
 					if(newestRoll == 7){
 						System.out.println("You lost bucco!");
 						hitPoint = true;
 					}
-				}
-			}
+
+				} //End wile loop
+
+			} //End else
 
 		} // End first roll else
 
@@ -115,6 +125,5 @@ public class Craps {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		playGame();
-		}
-
+	}
 }
