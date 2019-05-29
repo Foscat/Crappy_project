@@ -61,14 +61,12 @@ class Test {
 	}
 	//////////////////////////////////////////////////
 
-	//Write function to see if user lost in first roll
-
 	//Write test to check if player crapped out on first roll
 	@Test
 	public void crapOut(){
 		//Get dice roll
 		int random = rollDice();
-		//Make limiters for acceptable range of values
+		//Make bad values for it to match to
 		int bad1 = 2;
 		int bad2 = 3;
 		int bad3 = 12;
@@ -77,14 +75,12 @@ class Test {
 	}
 	///////////////////////////////////////////////////////////////////
 
-	//Write function to check for first roll win 
-
 	//Write test to check if player won the game in the first round
 	@Test
 	public void crapIn() {
 		//Get dice roll
 		int random = rollDice();
-		//Make limiters for acceptable range of values
+		//Make good values it is looking for
 		int good1 = 7;
 		int good2 = 11;
 		System.out.println("This crapIn: " + random);
